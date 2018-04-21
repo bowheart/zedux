@@ -1,0 +1,918 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Shape Relation Problems · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="glossary.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="examples.html">
+            
+                <a href="examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="guides/">
+            
+                <a href="guides/">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="guides/reactUsage.html">
+            
+                <a href="guides/reactUsage.html">
+            
+                    
+                    React Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="guides/theReducerLayer.html">
+            
+                <a href="guides/theReducerLayer.html">
+            
+                    
+                    The Reducer Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="guides/theProcessorLayer.html">
+            
+                <a href="guides/theProcessorLayer.html">
+            
+                    
+                    The Processor Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="guides/theInspectorLayer.html">
+            
+                <a href="guides/theInspectorLayer.html">
+            
+                    
+                    The Inspector Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="guides/zeroConfiguration.html">
+            
+                <a href="guides/zeroConfiguration.html">
+            
+                    
+                    Zero Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="guides/dispatchableReducers.html">
+            
+                <a href="guides/dispatchableReducers.html">
+            
+                    
+                    Dispatchable Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="guides/harnessingStateMachines.html">
+            
+                <a href="guides/harnessingStateMachines.html">
+            
+                    
+                    Harnessing State Machines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="guides/storeComposition.html">
+            
+                <a href="guides/storeComposition.html">
+            
+                    
+                    Store Composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="guides/configuringTheHierarchy.html">
+            
+                <a href="guides/configuringTheHierarchy.html">
+            
+                    
+                    Configuring the Hierarchy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="guides/mergingHierarchies.html">
+            
+                <a href="guides/mergingHierarchies.html">
+            
+                    
+                    Merging Hierarchies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="guides/metaChains.html">
+            
+                <a href="guides/metaChains.html">
+            
+                    
+                    Meta Chains
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="guides/optimizingPerformance.html">
+            
+                <a href="guides/optimizingPerformance.html">
+            
+                    
+                    Optimizing Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="api/">
+            
+                <a href="api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="api/act.html">
+            
+                <a href="api/act.html">
+            
+                    
+                    act
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="api/act.namespace.html">
+            
+                <a href="api/act.namespace.html">
+            
+                    
+                    act.namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="api/actionTypes.html">
+            
+                <a href="api/actionTypes.html">
+            
+                    
+                    actionTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="api/createStore.html">
+            
+                <a href="api/createStore.html">
+            
+                    
+                    createStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="api/metaTypes.html">
+            
+                <a href="api/metaTypes.html">
+            
+                    
+                    metaTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="api/react.html">
+            
+                <a href="api/react.html">
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="api/select.html">
+            
+                <a href="api/select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="api/state.html">
+            
+                <a href="api/state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="api/transition.html">
+            
+                <a href="api/transition.html">
+            
+                    
+                    transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="api/Store.html">
+            
+                <a href="api/Store.html">
+            
+                    
+                    Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="api/ZeduxActor.html">
+            
+                <a href="api/ZeduxActor.html">
+            
+                    
+                    ZeduxActor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="api/ZeduxMachine.html">
+            
+                <a href="api/ZeduxMachine.html">
+            
+                    
+                    ZeduxMachine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="api/ZeduxReactor.html">
+            
+                <a href="api/ZeduxReactor.html">
+            
+                    
+                    ZeduxReactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="api/ZeduxState.html">
+            
+                <a href="api/ZeduxState.html">
+            
+                    
+                    ZeduxState
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="types/">
+            
+                <a href="types/">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="types/Action.html">
+            
+                <a href="types/Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="types/ActionCreator.html">
+            
+                <a href="types/ActionCreator.html">
+            
+                    
+                    ActionCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="types/Actor.html">
+            
+                <a href="types/Actor.html">
+            
+                    
+                    Actor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="types/Branch.html">
+            
+                <a href="types/Branch.html">
+            
+                    
+                    Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="types/Dispatchable.html">
+            
+                <a href="types/Dispatchable.html">
+            
+                    
+                    Dispatchable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="types/HierarchyDescriptor.html">
+            
+                <a href="types/HierarchyDescriptor.html">
+            
+                    
+                    HierarchyDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="types/Inducer.html">
+            
+                <a href="types/Inducer.html">
+            
+                    
+                    Inducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="types/Inspector.html">
+            
+                <a href="types/Inspector.html">
+            
+                    
+                    Inspector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="types/MetaChainNode.html">
+            
+                <a href="types/MetaChainNode.html">
+            
+                    
+                    MetaChainNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="types/MetaNode.html">
+            
+                <a href="types/MetaNode.html">
+            
+                    
+                    MetaNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="types/NodeOptions.html">
+            
+                <a href="types/NodeOptions.html">
+            
+                    
+                    NodeOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="types/Processor.html">
+            
+                <a href="types/Processor.html">
+            
+                    
+                    Processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="types/Reactor.html">
+            
+                <a href="types/Reactor.html">
+            
+                    
+                    Reactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="types/Reducer.html">
+            
+                <a href="types/Reducer.html">
+            
+                    
+                    Reducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="types/Selector.html">
+            
+                <a href="types/Selector.html">
+            
+                    
+                    Selector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="types/State.html">
+            
+                <a href="types/State.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="types/StoreBase.html">
+            
+                <a href="types/StoreBase.html">
+            
+                    
+                    StoreBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="types/Subscription.html">
+            
+                <a href="types/Subscription.html">
+            
+                    
+                    Subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="shapeRelationProblems.html">
+            
+                <a href="shapeRelationProblems.html">
+            
+                    
+                    Shape Relation Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Shape Relation Problems</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="shape-relation-problems">Shape Relation Problems</h1>
+<p>This is just a page to get creative juices flowing about shape relation problems. All of these are surmountable, but we haven&apos;t come up with a clean, simple api for handling any of them yet. Feedback is what we&apos;re after here!</p>
+<h2 id="the-problem">The problem</h2>
+<p>A &quot;shape relation problem&quot; is a problem surrounding two or more entities with different <a href="glossary.html#shape-relation">shape relations</a>.</p>
+<p>In all cases, the easiest workaround is to bring both entities to the same level. Unfortunately, this will always necessarily be the lowest level. In other words, this means taking the <a href="glossary.html#shape-agnostic">shape agnostic</a> entity (the &quot;higher&quot; level) and making it <a href="glossary.html#shape-bound">shape bound</a> (the &quot;lower&quot; level).</p>
+<p>This isn&apos;t a big deal in a single-store environment. Since there is only one &quot;shape&quot;, there is not usually a need to keep entities unaware of it. But Zedux doesn&apos;t believe in single stores.</p>
+<p>Keeping entities shape agnostic makes them reusable. This is the better approach. Even shape bound entities should abstract out as much of their boundedness as possible. This is why selectors, for example, are composable; so we can have higher-order selectors that are effectively shape agnostic, composed of many shape bound selectors. This means we can use and reuse them with ease. It also makes for a declarative api.</p>
+<p>Essentially, we&apos;re looking for some happy, easy, declarative adapter layer or standard abstraction of some sort that&apos;ll allow shape agnostic entities to communicate with specific shape bound entities.</p>
+<h2 id="the-problems">The problems</h2>
+<h3 id="colocating-selectors-and-reducers">Colocating selectors and reducers.</h3>
+<p>This is a nice thought (<a href="https://github.com/reactjs/redux/issues/2295#issuecomment-287960516" target="_blank">first expressed by Dan Abramov himself</a>, I believe) but hasn&apos;t been very practical. Selectors are shape bound, while reducers are shape agnostic.</p>
+<p>On the other hand, this is another argument for <a href="types/Inducer.html">inducers</a>. As opposed to reducers, inducers <em>are</em> shape bound. This means that colocating selectors and inducers is easy and natural.</p>
+<h3 id="processor-shape-dependencies">Processor shape dependencies</h3>
+<p>Processors are necessarily shape agnostic, but there are cases where a processor needs to know the value of some other piece of state. Currently this is done by adding an inspector to the store that behaves as a shape bound &quot;processor&quot;. This is just semantically irksome and a little more overhead for code splitting environments than we&apos;d like.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="glossary.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Glossary">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Shape Relation Problems","level":"1.8","depth":1,"previous":{"title":"Glossary","level":"1.7","depth":1,"path":"docs/glossary.md","ref":"docs/glossary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","anchorjs"],"pluginsConfig":{"prism":{},"anchorjs":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./docs/styles/website.css"}},"file":{"path":"docs/shapeRelationProblems.md","mtime":"2017-12-17T06:58:27.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-21T20:42:33.166Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

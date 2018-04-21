@@ -1,0 +1,1015 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ZeduxState · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../types/" />
+    
+    
+    <link rel="prev" href="ZeduxReactor.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../overview.html">
+            
+                <a href="../overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../examples.html">
+            
+                <a href="../examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../guides/">
+            
+                <a href="../guides/">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../guides/reactUsage.html">
+            
+                <a href="../guides/reactUsage.html">
+            
+                    
+                    React Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../guides/theReducerLayer.html">
+            
+                <a href="../guides/theReducerLayer.html">
+            
+                    
+                    The Reducer Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../guides/theProcessorLayer.html">
+            
+                <a href="../guides/theProcessorLayer.html">
+            
+                    
+                    The Processor Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../guides/theInspectorLayer.html">
+            
+                <a href="../guides/theInspectorLayer.html">
+            
+                    
+                    The Inspector Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../guides/zeroConfiguration.html">
+            
+                <a href="../guides/zeroConfiguration.html">
+            
+                    
+                    Zero Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../guides/dispatchableReducers.html">
+            
+                <a href="../guides/dispatchableReducers.html">
+            
+                    
+                    Dispatchable Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../guides/harnessingStateMachines.html">
+            
+                <a href="../guides/harnessingStateMachines.html">
+            
+                    
+                    Harnessing State Machines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../guides/storeComposition.html">
+            
+                <a href="../guides/storeComposition.html">
+            
+                    
+                    Store Composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../guides/configuringTheHierarchy.html">
+            
+                <a href="../guides/configuringTheHierarchy.html">
+            
+                    
+                    Configuring the Hierarchy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../guides/mergingHierarchies.html">
+            
+                <a href="../guides/mergingHierarchies.html">
+            
+                    
+                    Merging Hierarchies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../guides/metaChains.html">
+            
+                <a href="../guides/metaChains.html">
+            
+                    
+                    Meta Chains
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../guides/optimizingPerformance.html">
+            
+                <a href="../guides/optimizingPerformance.html">
+            
+                    
+                    Optimizing Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="act.html">
+            
+                <a href="act.html">
+            
+                    
+                    act
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="act.namespace.html">
+            
+                <a href="act.namespace.html">
+            
+                    
+                    act.namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="actionTypes.html">
+            
+                <a href="actionTypes.html">
+            
+                    
+                    actionTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="createStore.html">
+            
+                <a href="createStore.html">
+            
+                    
+                    createStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="metaTypes.html">
+            
+                <a href="metaTypes.html">
+            
+                    
+                    metaTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="select.html">
+            
+                <a href="select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="state.html">
+            
+                <a href="state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="transition.html">
+            
+                <a href="transition.html">
+            
+                    
+                    transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Store.html">
+            
+                <a href="Store.html">
+            
+                    
+                    Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="ZeduxActor.html">
+            
+                <a href="ZeduxActor.html">
+            
+                    
+                    ZeduxActor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="ZeduxMachine.html">
+            
+                <a href="ZeduxMachine.html">
+            
+                    
+                    ZeduxMachine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="ZeduxReactor.html">
+            
+                <a href="ZeduxReactor.html">
+            
+                    
+                    ZeduxReactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.14" data-path="ZeduxState.html">
+            
+                <a href="ZeduxState.html">
+            
+                    
+                    ZeduxState
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../types/">
+            
+                <a href="../types/">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../types/Action.html">
+            
+                <a href="../types/Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../types/ActionCreator.html">
+            
+                <a href="../types/ActionCreator.html">
+            
+                    
+                    ActionCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../types/Actor.html">
+            
+                <a href="../types/Actor.html">
+            
+                    
+                    Actor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../types/Branch.html">
+            
+                <a href="../types/Branch.html">
+            
+                    
+                    Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../types/Dispatchable.html">
+            
+                <a href="../types/Dispatchable.html">
+            
+                    
+                    Dispatchable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../types/HierarchyDescriptor.html">
+            
+                <a href="../types/HierarchyDescriptor.html">
+            
+                    
+                    HierarchyDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../types/Inducer.html">
+            
+                <a href="../types/Inducer.html">
+            
+                    
+                    Inducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../types/Inspector.html">
+            
+                <a href="../types/Inspector.html">
+            
+                    
+                    Inspector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../types/MetaChainNode.html">
+            
+                <a href="../types/MetaChainNode.html">
+            
+                    
+                    MetaChainNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../types/MetaNode.html">
+            
+                <a href="../types/MetaNode.html">
+            
+                    
+                    MetaNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../types/NodeOptions.html">
+            
+                <a href="../types/NodeOptions.html">
+            
+                    
+                    NodeOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../types/Processor.html">
+            
+                <a href="../types/Processor.html">
+            
+                    
+                    Processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../types/Reactor.html">
+            
+                <a href="../types/Reactor.html">
+            
+                    
+                    Reactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../types/Reducer.html">
+            
+                <a href="../types/Reducer.html">
+            
+                    
+                    Reducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../types/Selector.html">
+            
+                <a href="../types/Selector.html">
+            
+                    
+                    Selector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../types/State.html">
+            
+                <a href="../types/State.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../types/StoreBase.html">
+            
+                <a href="../types/StoreBase.html">
+            
+                    
+                    StoreBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../types/Subscription.html">
+            
+                <a href="../types/Subscription.html">
+            
+                    
+                    Subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../glossary.html">
+            
+                <a href="../glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../shapeRelationProblems.html">
+            
+                <a href="../shapeRelationProblems.html">
+            
+                    
+                    Shape Relation Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ZeduxState</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="zeduxstate">ZeduxState</h1>
+<p>The State created by the built-in <a href="state.html"><code>state()</code> factory</a>.</p>
+<p>A ZeduxState is a normal <a href="../types/State.html">State</a> with a few extra methods for easily declaring <code>enter</code> and <code>leave</code> hooks.</p>
+<p>A ZeduxState is <em>also</em> a valid <a href="ZeduxActor.html">ZeduxActor</a>, complete with <code>payload()</code> method for overriding the default identity function payload creator.</p>
+<h2 id="definition">Definition</h2>
+<pre class="language-"><code class="lang-typescript"><span class="token keyword">interface</span> <span class="token class-name">ZeduxState</span><span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">string</span><span class="token operator">&gt;</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">,</span> ZeduxActor<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">onEnter</span><span class="token punctuation">(</span>processor<span class="token punctuation">:</span> Processor<span class="token punctuation">)</span><span class="token punctuation">:</span> ZeduxState<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span>
+  <span class="token function">onLeave</span><span class="token punctuation">(</span>processor<span class="token punctuation">:</span> Processor<span class="token punctuation">)</span><span class="token punctuation">:</span> ZeduxState<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>onEnter</strong> - A function that accepts a valid <a href="../types/Processor.html">processor</a> and sets it as this State&apos;s <code>enter</code> property.</p>
+<p><strong>onLeave</strong> - A function that accepts a valid <a href="../types/Processor.html">processor</a> and sets it as this State&apos;s <code>leave</code> property.</p>
+<h2 id="examples">Examples</h2>
+<p>The classic traffic light example:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> state<span class="token punctuation">,</span> transition <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;zedux&apos;</span>
+
+<span class="token keyword">const</span> green <span class="token operator">=</span> <span class="token function">state</span><span class="token punctuation">(</span><span class="token string">&apos;green&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">onEnter</span><span class="token punctuation">(</span>dispatch <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span>
+      <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">yellow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token number">2000</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> yellow <span class="token operator">=</span> <span class="token function">state</span><span class="token punctuation">(</span><span class="token string">&apos;yellow&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">onEnter</span><span class="token punctuation">(</span>dispatch <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span>
+      <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token number">500</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> red <span class="token operator">=</span> <span class="token function">state</span><span class="token punctuation">(</span><span class="token string">&apos;red&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">onEnter</span><span class="token punctuation">(</span>dispatch <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span>
+      <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token function">green</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token number">2000</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> trafficLight <span class="token operator">=</span> <span class="token function">transition</span><span class="token punctuation">(</span>green<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>yellow<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>red<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>green<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>trafficLight<span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span>newState<span class="token punctuation">,</span> oldState<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`light went from </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>oldState<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> to </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>newState<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="method-api">Method API</h2>
+<h3 id="zeduxstateonenter"><code>zeduxState.onEnter()</code></h3>
+<p>Sets the <code>enter</code> property of the ZeduxState.</p>
+<h4 id="definition">Definition</h4>
+<pre class="language-"><code class="lang-typescript"><span class="token punctuation">(</span>processor<span class="token punctuation">:</span> Processor<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> ZeduxState
+</code></pre>
+<p><strong>processor</strong> - A valid <a href="../types/Processor.html">processor</a> that will be called when the machine enters this state.</p>
+<p>Returns the ZeduxState for chaining.</p>
+<h4 id="examples">Examples</h4>
+<p>The following two examples are essentially equivalent:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">const</span> isFetching <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&apos;isFetching&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+isFetching<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">&apos;isFetching&apos;</span>
+isFetching<span class="token punctuation">.</span>enter <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`entered </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>isFetching<span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> state`</span></span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> state <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;zedux&apos;</span>
+
+<span class="token keyword">const</span> isFetching <span class="token operator">=</span> <span class="token function">state</span><span class="token punctuation">(</span><span class="token string">&apos;isFetching&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">onEnter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`entered </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>isFetching<span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> state`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="zeduxstateonleave"><code>zeduxState.onLeave()</code></h3>
+<p>Sets the <code>leave</code> property of the ZeduxState.</p>
+<h4 id="definition">Definition</h4>
+<pre class="language-"><code class="lang-typescript"><span class="token punctuation">(</span>processor<span class="token punctuation">:</span> Processor<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> ZeduxState
+</code></pre>
+<p><strong>processor</strong> - A valid <a href="../types/Processor.html">processor</a> that will be called when the machine leaves this state.</p>
+<p>Returns the ZeduxState for chaining.</p>
+<h4 id="examples">Examples</h4>
+<p>The following two examples are essentially equivalent:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">const</span> isFetching <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&apos;isFetching&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+isFetching<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">&apos;isFetching&apos;</span>
+isFetching<span class="token punctuation">.</span>leave <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`left </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>isFetching<span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> state`</span></span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> state <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;zedux&apos;</span>
+
+<span class="token keyword">const</span> isFetching <span class="token operator">=</span> <span class="token function">state</span><span class="token punctuation">(</span><span class="token string">&apos;isFetching&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">onLeave</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`left </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>isFetching<span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> state`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="notes">Notes</h2>
+<p>ZeduxStates are a conglomeration of many different concepts of Zedux. As such, it can be difficult to remember everything they do. Just remember these 4 pieces that make up a ZeduxState:</p>
+<ul>
+<li><p>A ZeduxState is an <a href="../types/Actor.html">actor</a>. It has a <code>type</code> property denoting its action type. It also <strong>is</strong> an action creator function &#x2013; when called, it returns an action whose <code>type</code> is the State&apos;s <code>type</code> property.</p>
+</li>
+<li><p>A ZeduxState is a <a href="ZeduxActor.html">ZeduxActor</a>. It thus has a <code>payload()</code> method for overriding the default payload creator function. This <code>payload()</code> method returns the ZeduxActor for chaining.</p>
+</li>
+<li><p>A ZeduxState is a <a href="../types/State.html">State</a>. It can have optional <code>enter</code> and <code>leave</code> properties that should be called when the machine enters and leaves this State, respectively.</p>
+</li>
+<li><p>A ZeduxState has two additional, unique methods: <code>onEnter()</code> and <code>onLeave()</code>. These are just convenience methods for setting the <code>enter</code> and <code>leave</code> properties, respectively. They both return the ZeduxState for chaining.</p>
+</li>
+</ul>
+<blockquote>
+<p>Note that both <code>State</code> and <code>ZeduxActor</code> extend the <code>Actor</code> interface. <code>ZeduxState</code> extends both <code>State</code> and <code>ZeduxActor</code>, creating a cute little diamond, if we were to diagram this inheritance hierarchy.</p>
+</blockquote>
+<p><img src="../img/ZeduxState-inheritance-tree.png" alt="ZeduxState inheritance tree"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ZeduxReactor.html" class="navigation navigation-prev " aria-label="Previous page: ZeduxReactor">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../types/" class="navigation navigation-next " aria-label="Next page: Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZeduxState","level":"1.5.14","depth":2,"next":{"title":"Types","level":"1.6","depth":1,"path":"docs/types/README.md","ref":"docs/types/README.md","articles":[{"title":"Action","level":"1.6.1","depth":2,"path":"docs/types/Action.md","ref":"docs/types/Action.md","articles":[]},{"title":"ActionCreator","level":"1.6.2","depth":2,"path":"docs/types/ActionCreator.md","ref":"docs/types/ActionCreator.md","articles":[]},{"title":"Actor","level":"1.6.3","depth":2,"path":"docs/types/Actor.md","ref":"docs/types/Actor.md","articles":[]},{"title":"Branch","level":"1.6.4","depth":2,"path":"docs/types/Branch.md","ref":"docs/types/Branch.md","articles":[]},{"title":"Dispatchable","level":"1.6.5","depth":2,"path":"docs/types/Dispatchable.md","ref":"docs/types/Dispatchable.md","articles":[]},{"title":"HierarchyDescriptor","level":"1.6.6","depth":2,"path":"docs/types/HierarchyDescriptor.md","ref":"docs/types/HierarchyDescriptor.md","articles":[]},{"title":"Inducer","level":"1.6.7","depth":2,"path":"docs/types/Inducer.md","ref":"docs/types/Inducer.md","articles":[]},{"title":"Inspector","level":"1.6.8","depth":2,"path":"docs/types/Inspector.md","ref":"docs/types/Inspector.md","articles":[]},{"title":"MetaChainNode","level":"1.6.9","depth":2,"path":"docs/types/MetaChainNode.md","ref":"docs/types/MetaChainNode.md","articles":[]},{"title":"MetaNode","level":"1.6.10","depth":2,"path":"docs/types/MetaNode.md","ref":"docs/types/MetaNode.md","articles":[]},{"title":"NodeOptions","level":"1.6.11","depth":2,"path":"docs/types/NodeOptions.md","ref":"docs/types/NodeOptions.md","articles":[]},{"title":"Processor","level":"1.6.12","depth":2,"path":"docs/types/Processor.md","ref":"docs/types/Processor.md","articles":[]},{"title":"Reactor","level":"1.6.13","depth":2,"path":"docs/types/Reactor.md","ref":"docs/types/Reactor.md","articles":[]},{"title":"Reducer","level":"1.6.14","depth":2,"path":"docs/types/Reducer.md","ref":"docs/types/Reducer.md","articles":[]},{"title":"Selector","level":"1.6.15","depth":2,"path":"docs/types/Selector.md","ref":"docs/types/Selector.md","articles":[]},{"title":"State","level":"1.6.16","depth":2,"path":"docs/types/State.md","ref":"docs/types/State.md","articles":[]},{"title":"StoreBase","level":"1.6.17","depth":2,"path":"docs/types/StoreBase.md","ref":"docs/types/StoreBase.md","articles":[]},{"title":"Subscription","level":"1.6.18","depth":2,"path":"docs/types/Subscription.md","ref":"docs/types/Subscription.md","articles":[]}]},"previous":{"title":"ZeduxReactor","level":"1.5.13","depth":2,"path":"docs/api/ZeduxReactor.md","ref":"docs/api/ZeduxReactor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","anchorjs"],"pluginsConfig":{"prism":{},"anchorjs":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./docs/styles/website.css"}},"file":{"path":"docs/api/ZeduxState.md","mtime":"2018-02-14T04:07:24.884Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-21T20:42:33.166Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

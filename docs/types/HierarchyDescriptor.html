@@ -1,0 +1,949 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HierarchyDescriptor · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Inducer.html" />
+    
+    
+    <link rel="prev" href="Dispatchable.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../overview.html">
+            
+                <a href="../overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../examples.html">
+            
+                <a href="../examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../guides/">
+            
+                <a href="../guides/">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../guides/reactUsage.html">
+            
+                <a href="../guides/reactUsage.html">
+            
+                    
+                    React Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../guides/theReducerLayer.html">
+            
+                <a href="../guides/theReducerLayer.html">
+            
+                    
+                    The Reducer Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../guides/theProcessorLayer.html">
+            
+                <a href="../guides/theProcessorLayer.html">
+            
+                    
+                    The Processor Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../guides/theInspectorLayer.html">
+            
+                <a href="../guides/theInspectorLayer.html">
+            
+                    
+                    The Inspector Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../guides/zeroConfiguration.html">
+            
+                <a href="../guides/zeroConfiguration.html">
+            
+                    
+                    Zero Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../guides/dispatchableReducers.html">
+            
+                <a href="../guides/dispatchableReducers.html">
+            
+                    
+                    Dispatchable Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../guides/harnessingStateMachines.html">
+            
+                <a href="../guides/harnessingStateMachines.html">
+            
+                    
+                    Harnessing State Machines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../guides/storeComposition.html">
+            
+                <a href="../guides/storeComposition.html">
+            
+                    
+                    Store Composition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../guides/configuringTheHierarchy.html">
+            
+                <a href="../guides/configuringTheHierarchy.html">
+            
+                    
+                    Configuring the Hierarchy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../guides/mergingHierarchies.html">
+            
+                <a href="../guides/mergingHierarchies.html">
+            
+                    
+                    Merging Hierarchies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../guides/metaChains.html">
+            
+                <a href="../guides/metaChains.html">
+            
+                    
+                    Meta Chains
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../guides/optimizingPerformance.html">
+            
+                <a href="../guides/optimizingPerformance.html">
+            
+                    
+                    Optimizing Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../api/act.html">
+            
+                <a href="../api/act.html">
+            
+                    
+                    act
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../api/act.namespace.html">
+            
+                <a href="../api/act.namespace.html">
+            
+                    
+                    act.namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../api/actionTypes.html">
+            
+                <a href="../api/actionTypes.html">
+            
+                    
+                    actionTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../api/createStore.html">
+            
+                <a href="../api/createStore.html">
+            
+                    
+                    createStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../api/metaTypes.html">
+            
+                <a href="../api/metaTypes.html">
+            
+                    
+                    metaTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../api/react.html">
+            
+                <a href="../api/react.html">
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../api/select.html">
+            
+                <a href="../api/select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../api/state.html">
+            
+                <a href="../api/state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../api/transition.html">
+            
+                <a href="../api/transition.html">
+            
+                    
+                    transition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../api/Store.html">
+            
+                <a href="../api/Store.html">
+            
+                    
+                    Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../api/ZeduxActor.html">
+            
+                <a href="../api/ZeduxActor.html">
+            
+                    
+                    ZeduxActor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../api/ZeduxMachine.html">
+            
+                <a href="../api/ZeduxMachine.html">
+            
+                    
+                    ZeduxMachine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../api/ZeduxReactor.html">
+            
+                <a href="../api/ZeduxReactor.html">
+            
+                    
+                    ZeduxReactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../api/ZeduxState.html">
+            
+                <a href="../api/ZeduxState.html">
+            
+                    
+                    ZeduxState
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Action.html">
+            
+                <a href="Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="ActionCreator.html">
+            
+                <a href="ActionCreator.html">
+            
+                    
+                    ActionCreator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="Actor.html">
+            
+                <a href="Actor.html">
+            
+                    
+                    Actor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Branch.html">
+            
+                <a href="Branch.html">
+            
+                    
+                    Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="Dispatchable.html">
+            
+                <a href="Dispatchable.html">
+            
+                    
+                    Dispatchable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.6" data-path="HierarchyDescriptor.html">
+            
+                <a href="HierarchyDescriptor.html">
+            
+                    
+                    HierarchyDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="Inducer.html">
+            
+                <a href="Inducer.html">
+            
+                    
+                    Inducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="Inspector.html">
+            
+                <a href="Inspector.html">
+            
+                    
+                    Inspector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="MetaChainNode.html">
+            
+                <a href="MetaChainNode.html">
+            
+                    
+                    MetaChainNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="MetaNode.html">
+            
+                <a href="MetaNode.html">
+            
+                    
+                    MetaNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="NodeOptions.html">
+            
+                <a href="NodeOptions.html">
+            
+                    
+                    NodeOptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="Processor.html">
+            
+                <a href="Processor.html">
+            
+                    
+                    Processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="Reactor.html">
+            
+                <a href="Reactor.html">
+            
+                    
+                    Reactor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="Reducer.html">
+            
+                <a href="Reducer.html">
+            
+                    
+                    Reducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="Selector.html">
+            
+                <a href="Selector.html">
+            
+                    
+                    Selector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="State.html">
+            
+                <a href="State.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="StoreBase.html">
+            
+                <a href="StoreBase.html">
+            
+                    
+                    StoreBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="Subscription.html">
+            
+                <a href="Subscription.html">
+            
+                    
+                    Subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../glossary.html">
+            
+                <a href="../glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../shapeRelationProblems.html">
+            
+                <a href="../shapeRelationProblems.html">
+            
+                    
+                    Shape Relation Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HierarchyDescriptor</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hierarchydescriptor">HierarchyDescriptor</h1>
+<p>This is the parameter passed to <a href="../api/Store.html#storeuse"><code>store.use()</code></a>. Typically this will be a <a href="Branch.html">branch node</a> composed of other hierarchy descriptors.</p>
+<h2 id="definition">Definition</h2>
+<pre class="language-"><code class="lang-typescript">type HierarchyDescriptor <span class="token operator">=</span> Branch <span class="token operator">|</span> Reactor <span class="token operator">|</span> Store <span class="token operator">|</span> <span class="token keyword">null</span>
+</code></pre>
+<p>A hierarchy descriptor can be a <a href="Branch.html">branch</a>, a <a href="Reactor.html">reactor</a>, a <a href="../api/Store.html">store</a>, or <code>null</code> (which indicates a node that should be deleted).</p>
+<h2 id="examples">Examples</h2>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;zedux&apos;</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// a branch node - creates the hierarchy</span>
+    a<span class="token punctuation">:</span> aReactor <span class="token comment" spellcheck="true">// a reactor node</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>aStore<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// a store node - replaces the existing hierarchy</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// a null node - deletes the existing hierarchy</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>aReactor<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// a reactor node - recreates the hierarchy</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// a branch node - replaces the existing hierarchy</span>
+    a<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      b<span class="token punctuation">:</span> aReactor
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    c<span class="token punctuation">:</span> aStore
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// a branch node - merged into the existing hierarchy</span>
+    a<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// a branch node - merged into `hierarchy.a`</span>
+      d<span class="token punctuation">:</span> aReactor <span class="token comment" spellcheck="true">// a reactor node</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>At the end of all that, the store&apos;s hierarchy descriptor will look like:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token punctuation">{</span>
+  a<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    b<span class="token punctuation">:</span> aReactor<span class="token punctuation">,</span>
+    d<span class="token punctuation">:</span> aReactor
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  c<span class="token punctuation">:</span> aStore
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="notes">Notes</h2>
+<p>While Zedux provides this abstraction for you, you can still piece together your own reactor hierarchies like in Redux. Just pass your root reactor to <code>store.use()</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Dispatchable.html" class="navigation navigation-prev " aria-label="Previous page: Dispatchable">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Inducer.html" class="navigation navigation-next " aria-label="Next page: Inducer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HierarchyDescriptor","level":"1.6.6","depth":2,"next":{"title":"Inducer","level":"1.6.7","depth":2,"path":"docs/types/Inducer.md","ref":"docs/types/Inducer.md","articles":[]},"previous":{"title":"Dispatchable","level":"1.6.5","depth":2,"path":"docs/types/Dispatchable.md","ref":"docs/types/Dispatchable.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","anchorjs"],"pluginsConfig":{"prism":{},"anchorjs":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./docs/styles/website.css"}},"file":{"path":"docs/types/HierarchyDescriptor.md","mtime":"2018-01-22T17:24:05.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-21T20:42:33.166Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
