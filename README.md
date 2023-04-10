@@ -1,3 +1,7 @@
+# [DEPRECATED]
+
+This repo has moved to [`Omnistac/zedux`](https://github.com/omnistac/zedux).
+
 # Zedux
 
 [![Build Status](https://travis-ci.org/bowheart/zedux.svg?branch=master)](https://travis-ci.org/bowheart/zedux)

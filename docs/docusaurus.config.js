@@ -23,12 +23,16 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/bowheart/zedux',
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://omnistac.github.io/zedux',
+          label: 'IMPORTANT: Zedux Has Moved!',
+          position: 'left',
+        }
       ],
     },
     footer: {
